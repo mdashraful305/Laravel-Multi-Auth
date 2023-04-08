@@ -13,7 +13,7 @@ git clone https://github.com/dev-ashrafbd/Laravel-Multi-Auth.git
 ```
 Next, navigate to the project directory and install the required dependencies:
 ```bash
-cd laravel-multiauth-adminlte3
+cd Laravel-Multi-Auth
 composer install
 ```
 Create a new database for the project and configure the database connection in the .env file:
