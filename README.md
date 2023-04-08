@@ -9,7 +9,7 @@ To get started with this project, you will need to have the following software i
 - MySQL
 Once you have installed these prerequisites, you can clone the project to your local machine:
 ```bash
-git clone https://github.com/username/laravel-multiauth-adminlte3.git
+git clone https://github.com/dev-ashrafbd/Laravel-Multi-Auth.git
 ```
 Next, navigate to the project directory and install the required dependencies:
 ```bash
