@@ -12,7 +12,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $users=User::where('role_id','=',1)->get();
+        $users=User::all();
         return view('admin.user.index',compact('users'));
     }
 
@@ -23,7 +23,7 @@ class UserController extends Controller
     }
 
     public function store(Request $request){
-        
+
         $this->validate($request,[
             'name'=>'required',
             'username'=>'required|unique:users',

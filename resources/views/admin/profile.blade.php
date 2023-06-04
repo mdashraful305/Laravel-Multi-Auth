@@ -103,12 +103,12 @@
                     <div class="tab-content">
                         {{-- <div class="active tab-pane" id="info">
 
-                            
+
 
                         </div> --}}
 
                         <div class="tab-pane active" id="profile">
-                            <form method="POST" action="{{ route('admin.user.update' ,$user->id ) }}" enctype="multipart/form-data">
+                            <form method="POST" action="{{ route('admin.profile.update' ,$user->id ) }}" enctype="multipart/form-data">
                                 @csrf
                                 <div class="container py-5">
 
@@ -118,7 +118,7 @@
                                             <p class="font-italic text-dark text-center">The image uploaded will be rendered inside the box below.</p>
                                             <div class="image-area mt-4"><img id="imageResult" class="img-fluid rounded shadow-sm mx-auto d-block" width="250px"></div>
                                     </header>
-                                
+
                                     <div class="row py-4">
                                         <div class="col-lg-6 mx-auto">
                                             <!-- Upload image input-->
@@ -133,9 +133,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+
                             </form>
-                            
+
                         </div>
 
                         <div class="tab-pane" id="settings">
@@ -171,7 +171,7 @@
                                         <input id="password" type="password" class="form-control" name="password_confirmation" placeholder="Re-type Password">
                                     </div>
                                 </div>
-                               
+
                                 <div class="form-group row">
                                     <div class="offset-sm-2 col-sm-10">
                                         <button type="submit" class="btn btn-danger">Update</button>
@@ -197,7 +197,7 @@
             toastr.error('{{ $error }}')
         </script>
     @endforeach
-    
+
 @endif
 @if (session('success'))
     <script>
@@ -205,7 +205,7 @@
     </script>
 @endif
 <script>
-    
+
 /*  ==========================================
     SHOW UPLOADED IMAGE
 * ========================================== */

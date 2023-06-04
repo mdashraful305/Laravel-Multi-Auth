@@ -42,7 +42,7 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     //Profile route
     Route::get('/profile','DashboardController@profile')->name('profile');
     Route::post('/profile/update/{id}','DashboardController@User_update')->name('profile.update');
-    
+
 });
 // Route for vendor
 Route::group(['as' => 'vendor.', 'prefix' => 'vendor', 'namespace' => 'Vendor', 'middleware' => ['auth', 'vendor']], function () {
@@ -57,7 +57,7 @@ Route::group(['as' => 'vendor.', 'prefix' => 'vendor', 'namespace' => 'Vendor', 
 // Route for Customer
 Route::group(['as' => 'customer.', 'prefix' => 'customer', 'namespace' => 'Customer', 'middleware' => ['auth', 'customer']], function () {
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
-    
+
     //Profile route
     Route::get('/profile','DashboardController@profile')->name('profile');
     Route::post('/profile/update/{id}','DashboardController@User_update')->name('user.update');
